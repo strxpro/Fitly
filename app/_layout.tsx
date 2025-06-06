@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Stack } from 'expo-router';
 import { useAuthStore } from '@store/auth.store';
-import i18n from '@app/i18n/translations';
+import i18n from '@i18n/translations';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { PaperProvider } from 'react-native-paper';
-import AuthProvider from '../src/context/AuthContext';
+import { AuthProvider } from '@context/AuthContext';
 
 function RootLayout() {
   const { user } = useAuthStore();

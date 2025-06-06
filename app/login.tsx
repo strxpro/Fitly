@@ -1,7 +1,8 @@
+import React from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
 import { Text, Button } from 'react-native-paper';
 import { useRouter } from 'expo-router';
-import useAuth from '../src/hooks/useAuth';
+import useAuth from '@hooks/useAuth';
 
 export default function LoginScreen() {
   const { signInWithGoogle, signInWithApple, isLoading } = useAuth();

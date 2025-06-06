@@ -5,24 +5,23 @@ module.exports = function (api) {
     plugins: [
       'react-native-reanimated/plugin',
       '@babel/plugin-proposal-export-namespace-from',
-      ['module-resolver', {
-        root: ['./'],
-        extensions: [
-          '.js',
-          '.jsx',
-          '.ts',
-          '.tsx',
-          '.android.js',
-          '.android.tsx',
-          '.ios.js',
-          '.ios.tsx',
-        ],
-        alias: {
-          '@': './',
-          '@components': './components',
-          '@lib': './lib'
-        }
-      }]
+      [
+        'module-resolver',
+        {
+          root: ['./'],
+          alias: {
+            '@': './src',
+            '@components': './components',
+            '@assets': './assets',
+            '@i18n': './src/i18n',
+            '@lib': './lib',
+            '@context': './src/context',
+            '@hooks': './src/hooks',
+            '@store': './store'
+          },
+        },
+      ],
+      ["@babel/plugin-transform-modules-commonjs", { "allowTopLevelThis": true }]
     ]
   };
 }; 

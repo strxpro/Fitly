@@ -21,3 +21,4 @@ Deploy on all platforms with Expo Application Services (EAS).
 "# Fitly" 
 "# Fitly" 
 "# Fitly" 
+"# FIT_UPDATE" 

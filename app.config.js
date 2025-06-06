@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   expo: {
     name: 'Fitly',
     slug: 'fitly',
@@ -34,7 +34,7 @@ export default {
     },
     plugins: [
       'expo-apple-authentication',
-      'expo-auth-session'
+      'expo-router'
     ],
     extra: {
       eas: {

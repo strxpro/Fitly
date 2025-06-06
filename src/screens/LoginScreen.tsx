@@ -15,11 +15,12 @@ import {
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
-import { AppLogo } from '../../components/AppLogo';
+import { AppLogo } from '@components/AppLogo';
 import { useAuthStore } from '@store/auth.store';
-import i18n from '@app/config/i18n';
+import i18n from '@i18n/translations';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
+import { supabase } from '../lib/supabaseClient';
 
 WebBrowser.maybeCompleteAuthSession();
 

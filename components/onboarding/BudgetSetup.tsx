@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
-import { Slider } from '@/components/ui/Slider';
+import { Slider } from '@components/ui/Slider';
 
 interface BudgetSetupProps {
   onComplete: () => void;

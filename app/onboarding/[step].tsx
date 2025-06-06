@@ -4,13 +4,13 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { ArrowLeft, ArrowRight, Check } from 'lucide-react-native';
 
 // Onboarding components
-import GoalSelection from '@/components/onboarding/GoalSelection';
-import DietaryPreferences from '@/components/onboarding/DietaryPreferences';
-import PhysicalData from '@/components/onboarding/PhysicalData';
-import FoodPreferences from '@/components/onboarding/FoodPreferences';
-import StorePreferences from '@/components/onboarding/StorePreferences';
-import BudgetSetup from '@/components/onboarding/BudgetSetup';
-import AllergiesSetup from '@/components/onboarding/AllergiesSetup';
+import GoalSelection from '@components/onboarding/GoalSelection';
+import DietaryPreferences from '@components/onboarding/DietaryPreferences';
+import PhysicalData from '@components/onboarding/PhysicalData';
+import FoodPreferences from '@components/onboarding/FoodPreferences';
+import StorePreferences from '@components/onboarding/StorePreferences';
+import BudgetSetup from '@components/onboarding/BudgetSetup';
+import AllergiesSetup from '@components/onboarding/AllergiesSetup';
 
 const steps = [
   'goal',

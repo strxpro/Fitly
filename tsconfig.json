@@ -4,35 +4,40 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@app/*": ["app/*"],
-      "@store/*": ["store/*"],
-      "@components/*": ["components/*"],
-      "@hooks/*": ["hooks/*"],
-      "@assets/*": ["assets/*"],
-      "@lib/*": ["lib/*"]
+      "@/*": [
+        "src/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@i18n/*": [
+        "src/i18n/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@store/*": [
+        "store/*"
+      ]
     },
-    "module": "node16",
-    "moduleResolution": "node16",
-    "jsx": "react-native",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "target": "es2017",
-    "lib": ["es2017"]
+    "types": [
+      "react"
+    ]
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
-    ".env.d.ts"
+    "**/*.tsx"
   ],
   "exclude": [
-    "node_modules/*",
-    "!node_modules/expo-modules-core",
-    "babel.config.js",
-    "metro.config.js"
+    "node_modules"
   ]
 }

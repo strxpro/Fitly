@@ -32,6 +32,6 @@
       "expo-router"
     ],
     "scheme": "fitly",
-    "sdkVersion": "53.0.0"
+    "sdkVersion": "50.0.0"
   }
 }

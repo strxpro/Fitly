@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import i18n from '@app/config/i18n';
+import i18n from '@i18n/translations';
 
 const LANGUAGES = [
   { code: 'en', name: 'English' },

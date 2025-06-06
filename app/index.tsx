@@ -2,8 +2,11 @@ import React, { useCallback } from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Apple, Mail } from 'lucide-react-native';
-import { useAuth } from '@/hooks/useAuth';
+import useAuth from '@hooks/useAuth';
 import { memo } from 'react';
+import welcomeBg from '@assets/images/welcome-bg.jpg';
+import logo from '@assets/images/logo.jpg';
+import googleIcon from '@assets/images/google-icon.png';
 
 const AuthButton = memo(({ onPress, disabled, icon, text }: {
   onPress: () => void;
@@ -51,7 +54,7 @@ export default function WelcomeScreen() {
 
   return (
     <ImageBackground
-      source={require('@/assets/images/welcome-bg.jpg')}
+      source={welcomeBg}
       style={styles.backgroundImage}
       resizeMode="cover"
     >
@@ -59,7 +62,7 @@ export default function WelcomeScreen() {
         <View style={styles.container}>
           <View style={styles.logoContainer}>
             <Image
-              source={require('@/assets/images/logo.jpg')}
+              source={logo}
               style={styles.logoPlaceholder}
               resizeMode="cover"
             />
@@ -72,7 +75,7 @@ export default function WelcomeScreen() {
               onPress={handleGoogleSignIn}
               disabled={loading}
               icon={<Image 
-                source={require('@/assets/images/google-icon.png')}
+                source={googleIcon}
                 style={styles.authIcon}
                 resizeMode="contain"
               />}

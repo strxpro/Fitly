@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '../../src/lib/supabaseClient';
 
 export default function RegisterScreen() {
   const router = useRouter();
