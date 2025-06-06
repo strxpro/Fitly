@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Fitly",
+    "name": "fitly",
     "slug": "fitly",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,23 +15,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.fitly.app"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.fitly.app"
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
     "plugins": [
       "expo-router"
     ],
     "scheme": "fitly",
-    "sdkVersion": "50.0.0"
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
